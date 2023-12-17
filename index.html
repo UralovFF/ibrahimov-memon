@@ -5,22 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/stylee.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
-      <div class="header__wrapper">
-        <div class="logo">
-          <a href="#"><img src="img/logo.svg" alt="logo" /></a>
-        </div>
-        <div class="account">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="logo">
+            <a href="#"><img src="img/logo.svg" alt="logo" /></a>
+          </div>
+          <div class="account">
             <p>have an account? <a href="#">sign in</a></p>
+          </div>
         </div>
       </div>
     </header>
     <main>
-      <section>
-        <div class="main__body">
+      <div class="container">
+        <section class="main__body">
           <p class="title">sign in</p>
           <p class="input__label">Sign in with email address</p>
           <div class="input">
@@ -35,20 +37,22 @@
           <div class="vector"></div>
           <p class="social-media__title">Or continue with</p>
           <div class="social-media">
-            <article>
-              <a href="#"><img src="img/google.svg" alt="" />Google</a>
-            </article>
-            <article>
-              <a href="#"><img src="img/facebook.svg" alt="" />Facebook</a>
-            </article>
+            <a class="social-media__btn" href="#"><img src="img/google.svg" alt="" />Google</a>
+            <a class="social-media__btn" href="#"><img src="img/facebook.svg" alt="" />Facebook</a>
           </div>
-          <p class="terms">By registering you with our<a href="#"> Terms and Conditions</a></p>
-        </div>
-      </section>
+          <p class="terms">
+            By registering you with our<a href="#"> Terms and Conditions</a>
+          </p>
+        </section>
+      </div>
     </main>
     <footer>
-        <p class="adventure">Sign in to your <span>adventure!</span></p>
-        <p class="copyright">Copyright by Ibrahim Memon</p>
+      <div class="container">
+        <div class="footer__wrapper">
+          <p class="adventure">Sign in to your <span>adventure!</span></p>
+          <p class="copyright">Copyright by Ibrahim Memon</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

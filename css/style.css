@@ -7,6 +7,7 @@
   box-sizing: border-box;
 
   font-family: Poppins;
+  font-size: 16px;
   font-weight: 500;
   color: #fff;
 }
@@ -31,32 +32,32 @@ body {
   background-repeat: no-repeat;
 }
 
+.container{
+  max-width: 1370px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
 .header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  padding: 50px 65px 0;
+  padding-top: 30px;
 }
 
 .header__wrapper .account {
   display: none;
 }
 
-main section {
-  display: grid;
-  grid-template-columns: auto;
-
-  padding: 10px 65px 50px;
-}
-
-.main__body {
+main .main__body {
   max-width: 460px;
-  justify-self: end;
+
+  margin: 120px 0 0 auto;
 }
 
 .main__body .title {
-  font-size: 77.711px;
+  font-size: 77.7px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -73,7 +74,7 @@ main section {
   column-gap: 11px;
 
   margin-top: 17px;
-  padding: 20px 22px;
+  padding: 1.25rem 1.375rem;
 
   background: #261046;
   border-radius: 10px;
@@ -108,6 +109,7 @@ main section {
 
 .social-media__title {
   margin-top: 34px;
+
   color: #b6b6b6;
   font-size: 12.5px;
   font-weight: 600;
@@ -121,14 +123,14 @@ main section {
   column-gap: 9px;
 }
 
-.social-media article a {
-  width: 225px;
+.social-media .social-media__btn {
+  width: 14rem;
+  height: 2.75rem;
 
   display: flex;
   justify-content: center;
+  align-items: center;
   column-gap: 12px;
-
-  padding: 11px 0;
 
   border-radius: 11px;
   background-color: #3b2063;
@@ -140,7 +142,7 @@ main section {
 .main__body .terms {
   margin-top: 22.5px;
   color: #b6b6b6;
-  font-size: 12.534px;
+  font-size: 12.5px;
   font-weight: 500;
 }
 
@@ -148,13 +150,13 @@ main section {
   color: #9d5ce9;
 }
 
-footer {
-  padding: 24px 0 50px 62px;
+.footer__wrapper{
+  margin-top: 54px;
 }
 
 footer .adventure {
   max-width: 425px;
-  font-size: 50.683px;
+  font-size: 50.5px;
   font-weight: 700;
   line-height: 51.5px;
   text-transform: uppercase;
@@ -176,10 +178,6 @@ footer .copyright{
     background-image: none;
   }
 
-  .header__wrapper{
-    padding: 50px 25px 0;
-  }
-
   .header__wrapper .account {
     display: block;
   }
@@ -198,21 +196,14 @@ footer .copyright{
     font-weight: 700;
     letter-spacing: 0.8px;
   }
-
-  main section {
-    padding: 100px 15px 0;
-  }
-
-  .main__body {
-    justify-self: center;
-  }
-
-  footer {
-    padding: 24px 15px 50px;
+  
+  main .main__body {
+    margin: 120px auto 0 auto;
   }
 
   footer .adventure {
     max-width: 100%;
+    margin-top: 120px;
     text-align: center;
   }
 }
@@ -224,12 +215,12 @@ footer .copyright{
     background-color: #240b48;
   }
 
-  .header__wrapper {
-    padding: 50px 15px 0;
+  .main__body .title{
+    font-size: 62px;
   }
 
-  footer {
-    padding: 140px 15px 18px;
+  .container{
+    padding: 0 15px;
   }
 
   footer .adventure{
@@ -237,10 +228,21 @@ footer .copyright{
   }
 
   footer .copyright{
+    margin-top: 140px;
     display: block;
     text-align: center;
     color: #60438C;
     font-size: 11.25px;
     text-transform: uppercase;
+  }
+}
+
+@media (max-width: 375px) {
+  .header__wrapper .account{
+    max-width: 120px;
+  }
+
+  .main__body .title{
+    font-size: 56px;
   }
 }
